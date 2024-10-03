@@ -45,8 +45,10 @@
         if (!liff.isLoggedIn()) {
           liff.login();
           const profile = await liff.getProfile();
+          console.log('++++++++++++++');
           console.log(liff.getAccessToken());
           console.log(profile);
+          console.log('++++++++++++++');
 
 
         }
